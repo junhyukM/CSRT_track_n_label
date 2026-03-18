@@ -1,0 +1,6 @@
+{
+  "source": "../../media/MVI_0107.mp4",
+  "resolution_ratio": 0.25,
+  "save_interval_sec": 2.0,
+  "classes" : "UAM"
+}
