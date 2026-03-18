@@ -265,7 +265,7 @@ def main():
                 cy = int(cy_scaled / processing_scale)
 
                 # 원본 프레임에 사각형 및 중심점 표시
-                cv2.rectangle(frame, (p1x, p1y), (p2x, p2y), (0, 255, 255), 4)
+                cv2.rectangle(frame, (p1x, p1y), (p2x, p2y), (0, 165, 255), 12)
                 cv2.circle(frame, (cx, cy), 10, (0, 255, 0), -1)
 
                 # MQTT 메시지 준비
@@ -317,7 +317,7 @@ def main():
         if selecting and bbox:
             p1 = (bbox[0], bbox[1])
             p2 = (bbox[0] + bbox[2], bbox[1] + bbox[3])
-            cv2.rectangle(display_frame, p1, p2, (255, 0, 0), 2)
+            cv2.rectangle(display_frame, p1, p2, (255, 0, 0), 3)
 
             # 현재 좌표 표시
             cv2.putText(display_frame, f"ROI: {p1} to {p2}", (10, 30),
